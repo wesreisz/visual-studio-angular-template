@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css" type="text/css" />
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" type="text/css" />
+	<script type="text/javascript" src="lib/jquery/js/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/angular/angular.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container" ng-controller="MyController as cntl">
+		<h3>{{cntl.title}}</h3>
+		<div ng-repeat="item in cntl.items">
+			{{item.title}}: <a href="{{item.url}}">{{item.url}}</a>
+		</div>
+	</div>
+</body>
+</html>
